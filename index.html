@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MC Advance | Mecânica Diesel, Mecatrônica e Elétrica em Itanhaém</title>
+<meta name="description" content="Mecânica diesel, mecatrônica, elétrica e SOS 24 horas para caminhões, ônibus, máquinas e utilitários em Itanhaém – SP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--bg2:#F1F5F9;--text:#0F172A;--muted:#475569;--card:#fff;--line:#E2E8F0;--navy:#1E3A8A;--blue:#2563EB;--orange:#F59E0B;--head:rgba(255,255,255,.92);--accent:#1E3A8A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1220;--bg2:#101A2E;--text:#E8EEF9;--muted:#9FB0CC;--card:#142038;--line:#22314F;--head:rgba(11,18,32,.92);--accent:#7FA8FF}}
+:root[data-theme="dark"]{--bg:#0B1220;--bg2:#101A2E;--text:#E8EEF9;--muted:#9FB0CC;--card:#142038;--line:#22314F;--head:rgba(11,18,32,.92);--accent:#7FA8FF}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Poppins,'Helvetica Neue',Arial,sans-serif;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--head);z-index:10}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--head);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--accent);letter-spacing:.5px}
+.brand b{color:var(--blue);font-weight:800}
+.mark{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#1E3A8A,#2563EB);color:#fff;display:grid;place-items:center;font-size:16px;font-weight:800}
+nav{display:flex;gap:22px;font-size:14px;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;border:2px solid transparent;cursor:pointer}
+.btn.or{background:var(--orange);color:#1a1200}
+.btn.ol{border-color:rgba(255,255,255,.6);color:#fff}
+.btn.bl{background:var(--navy);color:#fff}
+.btn.sm{padding:9px 18px;font-size:14px}
+@media(max-width:760px){nav{display:none}}
+.hero{background:linear-gradient(135deg,#1E3A8A,#2563EB);color:#fff;text-align:center;padding:64px 0 72px}
+.gears{display:flex;justify-content:center;gap:0;margin-bottom:18px}
+.g{width:64px;height:64px;margin:0 -4px;animation:spin 14s linear infinite}
+.g:nth-child(2){color:var(--orange);animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.g{animation:none}}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);padding:6px 16px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:1px}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.12;margin:18px 0 14px;font-weight:800}
+h1 span{color:var(--orange)}
+.hero p{max-width:620px;margin:0 auto 28px;font-size:18px;opacity:.92}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+section{padding:68px 0}
+section.alt{background:var(--bg2)}
+.eyebrow{color:var(--orange);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h2{font-size:clamp(26px,4vw,36px);margin:6px 0 10px;color:var(--accent);font-weight:700;line-height:1.2}
+.lead{color:var(--muted);max-width:620px;margin:0 0 34px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{margin:12px 0 6px;font-size:18px;color:var(--accent)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.ico{width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,#1E3A8A,#2563EB);display:grid;place-items:center;font-size:24px}
+.card.sos{border:2px solid var(--orange)}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chip{background:var(--card);border:1px solid var(--line);padding:12px 22px;border-radius:999px;font-weight:600;color:var(--accent)}
+.about{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.list li{display:flex;gap:12px;align-items:flex-start}
+.list li::before{content:"";flex:none;width:10px;height:10px;margin-top:9px;border-radius:50%;background:var(--orange)}
+.who{background:linear-gradient(135deg,#1E3A8A,#2563EB);color:#fff;border-radius:22px;padding:30px}
+.who h3{margin:0;font-size:26px}
+.who p{margin:4px 0 0;opacity:.9}
+.info{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-bottom:28px}
+.info .card a.v{display:block;font-weight:700;font-size:19px;color:var(--accent);margin-top:4px}
+.info small{color:var(--muted);font-weight:600;letter-spacing:1px;text-transform:uppercase;font-size:12px}
+footer{background:#0F1B3D;color:#C7D2EE;text-align:center;padding:30px 20px;font-size:14px}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:12;background:#25D366;color:#fff;font-weight:700;padding:14px 20px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.3);display:flex;gap:8px;align-items:center}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="gear" viewBox="-16 -16 32 32"><circle r="12" fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="4.71 4.71"/><path fill="currentColor" fill-rule="evenodd" d="M-11,0a11,11 0 1,0 22,0a11,11 0 1,0 -22,0ZM-4,0a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z"/></symbol></svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#inicio"><span class="mark">MC</span><span>MC <b>ADVANCE</b></span></a>
+    <nav><a href="#servicos">Serviços</a><a href="#veiculos">Veículos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+    <a class="btn or sm" href="https://wa.me/5514996721150?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MC%20Advance%20e%20preciso%20de%20atendimento." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="gears" aria-hidden="true">
+      <svg class="g" style="color:#fff"><use href="#gear"/></svg>
+      <svg class="g"><use href="#gear"/></svg>
+      <svg class="g" style="color:#fff"><use href="#gear"/></svg>
+    </div>
+    <span class="badge">SOS · ATENDIMENTO 24 HORAS</span>
+    <h1>Mecânica diesel, mecatrônica e <span>elétrica</span></h1>
+    <p>Soluções completas para caminhões, ônibus, máquinas e utilitários, com atendimento técnico em Itanhaém – SP.</p>
+    <div class="cta">
+      <a class="btn or" href="https://wa.me/5514996721150?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MC%20Advance%20e%20preciso%20de%20atendimento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn ol" href="tel:+5514996721150">Ligar agora</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="eyebrow">Serviços</div>
+    <h2>Tudo o que seu veículo precisa em um só lugar</h2>
+    <p class="lead">Da parte eletrônica à mecânica pesada, com diagnóstico técnico e atendimento de emergência.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🖥️</div><h3>Mecatrônica</h3><p>Diagnóstico eletrônico, módulos, sensores e sistemas embarcados.</p></div>
+      <div class="card"><div class="ico">🔧</div><h3>Mecânica diesel</h3><p>Manutenção geral de motores e sistemas de veículos diesel, preventiva e corretiva.</p></div>
+      <div class="card"><div class="ico">⚡</div><h3>Elétrica</h3><p>Baterias, alternador, motor de partida, iluminação e instalações elétricas.</p></div>
+      <div class="card sos"><div class="ico">🆘</div><h3>SOS 24 horas</h3><p>Socorro mecânico quando você mais precisa. Chame a qualquer hora.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="veiculos">
+  <div class="wrap">
+    <div class="eyebrow">Veículos atendidos</div>
+    <h2>Preparados para trabalho pesado</h2>
+    <p class="lead">Atendemos veículos de trabalho e de transporte.</p>
+    <div class="chips"><span class="chip">🚛 Caminhões</span><span class="chip">🚌 Ônibus</span><span class="chip">🚜 Máquinas</span><span class="chip">🚐 Utilitários</span></div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about">
+    <div>
+      <div class="eyebrow">Sobre a MC Advance</div>
+      <h2>Engenharia aplicada à oficina</h2>
+      <p class="lead" style="margin-bottom:20px">Unimos conhecimento técnico de mecatrônica com a experiência da mecânica diesel para diagnosticar com precisão e resolver o problema na origem.</p>
+      <ul class="list"><li>Diagnóstico técnico e preciso</li><li>Mecânica, elétrica e eletrônica juntas</li><li>Atendimento 24 horas</li></ul>
+    </div>
+    <div class="who"><div class="eyebrow">Responsável</div><h3>Luiz</h3><p>Engenheiro Mecatrônico</p></div>
+  </div>
+</section>
+
+<section class="alt" id="contato">
+  <div class="wrap">
+    <div class="eyebrow">Contato</div>
+    <h2>Fale com a gente agora</h2>
+    <p class="lead">Atendimento 24 horas, todos os dias.</p>
+    <div class="info">
+      <div class="card"><small>Telefone / WhatsApp</small><a class="v" href="tel:+5514996721150">+55 14 99672-1150</a></div>
+      <div class="card"><small>Endereço</small><a class="v" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Alessandro+Rangel+de+Lima+780+Itanha%C3%A9m+SP" target="_blank" rel="noopener">Rua Alessandro Rangel de Lima, 780<br>Itanhaém – SP</a></div>
+      <div class="card"><small>Horário</small><span class="v" style="display:block;font-weight:700;font-size:19px;color:var(--accent);margin-top:4px">24 horas</span></div>
+    </div>
+    <div class="cta" style="justify-content:flex-start">
+      <a class="btn bl" href="https://wa.me/5514996721150?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MC%20Advance%20e%20preciso%20de%20atendimento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn bl" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Alessandro+Rangel+de+Lima+780+Itanha%C3%A9m+SP" target="_blank" rel="noopener">Ver no mapa</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© MC Advance · Mecânica diesel, mecatrônica e elétrica · Itanhaém – SP</footer>
+<a class="fab" href="https://wa.me/5514996721150?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MC%20Advance%20e%20preciso%20de%20atendimento." target="_blank" rel="noopener">💬 WhatsApp</a>
+</body>
+</html>
